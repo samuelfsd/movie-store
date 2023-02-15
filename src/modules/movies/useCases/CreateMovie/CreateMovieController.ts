@@ -10,8 +10,8 @@ export class CreateMovieController {
 
     const createMovieUseCase = new CreateMovieUseCase();
 
-    const result = createMovieUseCase.execute({ title, duration, release_date });
+    const resultMovie = createMovieUseCase.execute({ title, duration, release_date });
 
-    return res.status(201).json(result);
+    return res.status(201).json(resultMovie);
   }
 }

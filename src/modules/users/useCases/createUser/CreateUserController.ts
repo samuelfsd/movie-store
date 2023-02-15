@@ -8,8 +8,8 @@ export class CreateUserController {
 
     const createUserUseCase = new CreateUserUseCase();
 
-    const result = await createUserUseCase.execute({ name, email });
+    const resultUser = await createUserUseCase.execute({ name, email });
 
-    return res.status(201).json(result)
+    return res.status(201).json(resultUser)
   }
 }
